@@ -1,12 +1,14 @@
 {
   "name": "react-calender",
   "version": "0.1.0",
+  "pre-commit": "lint-staged",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "format": "prettier --write './**/*.{js,jsx,ts,tsx,json,css,scss}'",
+    "format": "prettier --write './src/**/*.{js,jsx,ts,tsx,json,css,scss}'",
     "lint": "next lint",
+    "prepare": "husky install",
     "start": "next start",
     "type-check": "tsc"
   },
@@ -19,6 +21,8 @@
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",
     "eslint-config-prettier": "^8.3.0",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.2.3",
     "prettier": "^2.4.1",
     "typescript": "^4.4.4"
   }
